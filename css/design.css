@@ -1,0 +1,268 @@
+:root {
+  --text-color: #805145;
+  --prep-text: #673149;
+  --background-color: #fff7fc;
+  --body-color: #f3e5d8;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Young Serif", sans-serif;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .design {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .header .container {
+    margin-top: 20px;
+  }
+
+  .header .container .image img {
+    height: 250px;
+  }
+
+  .header .container .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .header .container .text h3 {
+    font-size: 14px;
+  }
+
+  .overlay .container {
+    height: 180px;
+    padding: 10px;
+  }
+
+  .overlay .container .Preparation {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .overlay .container .Preparation h3,
+  .overlay .Ingredients h2,
+  .overlay .instructions h2,
+  .overlay .nutrition h2 {
+    font-size: 1.3rem;
+  }
+
+  .overlay .container .Preparation ul li,
+  .overlay .Ingredients ul li,
+  .overlay .instructions ol li,
+  .overlay .nutrition .text h4,
+  .overlay .nutrition .table .tab1,
+  .overlay .nutrition .table .tab2,
+  .overlay .nutrition .table .tab3,
+  .overlay .nutrition .table .tab4 {
+    font-size: 0.85rem;
+  }
+
+  .overlay .instructions ol {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: white;
+  }
+  .design {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .header .container {
+    margin-top: 15px;
+  }
+
+  .header .container .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .header .container .text h3 {
+    font-size: 12px;
+  }
+
+  .overlay .container {
+    height: 150px;
+    padding: 5px;
+  }
+
+  .overlay .container .Preparation {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .overlay .container .Preparation h3,
+  .overlay .Ingredients h2,
+  .overlay .instructions h2,
+  .overlay .nutrition h2 {
+    font-size: 1.2rem;
+  }
+
+  .overlay .container .Preparation ul li,
+  .overlay .Ingredients ul li,
+  .overlay .instructions ol li,
+  .overlay .nutrition .text h4,
+  .overlay .nutrition .table .tab1,
+  .overlay .nutrition .table .tab2,
+  .overlay .nutrition .table .tab3,
+  .overlay .nutrition .table .tab4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .overlay .instructions ol {
+    padding-left: 10px;
+  }
+
+  .overlay .instructions ol li {
+    margin-bottom: 8px;
+  }
+}
+.header .container {
+  margin-top: 30px;
+}
+.header .container .image img {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.header .container .text h1 {
+  font-weight: 500;
+}
+.header .container .text h3 {
+  font-family: "Outfit";
+  font-weight: normal;
+  font-size: 16px;
+  color: #5c5a5a;
+}
+.overlay .container {
+  position: relative;
+  background-color: var(--body-color);
+  border-radius: 5px;
+  height: 200px;
+}
+.overlay .container .Preparation {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.overlay .container .Preparation h3 {
+  color: var(--prep-text);
+  font-family: "Outfit";
+}
+.overlay .container .Preparation ul li span {
+  font-weight: 900;
+  font-family: "Outfit";
+  line-height: 2;
+  color: #424242;
+}
+.overlay .container .Preparation ul li {
+  font-weight: normal;
+  font-family: "Outfit";
+  color: #5c5a5a;
+}
+.overlay .Ingredients {
+  line-height: 2;
+}
+.overlay .Ingredients h2 {
+  color: var(--text-color);
+  font-weight: normal;
+}
+.overlay .Ingredients ul li {
+  font-weight: normal;
+  font-family: "Outfit";
+  color: #5c5a5a;
+}
+.overlay .instructions h2 {
+  color: var(--text-color);
+  font-weight: normal;
+}
+.overlay .instructions ol li::marker {
+  color: var(--text-color);
+  font-weight: 600;
+  padding-left: 20px;
+}
+.overlay .instructions ol li {
+  font-weight: normal;
+  font-family: "Outfit";
+  color: #5c5a5a;
+  line-height: 2;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.overlay .instructions ol li span {
+  font-weight: 600;
+  font-family: "Outfit";
+  color: #424242;
+}
+.overlay .nutrition h2 {
+  color: var(--text-color);
+  font-weight: normal;
+}
+.overlay .nutrition .text h4 {
+  font-weight: normal;
+  font-family: "Outfit";
+  color: #5c5a5a;
+  line-height: 2;
+}
+.overlay .nutrition .table .tab1,
+.overlay .nutrition .table .tab2,
+.overlay .nutrition .table .tab3,
+.overlay .nutrition .table .tab4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overlay .nutrition .table .tab1,
+.overlay .nutrition .table .tab2,
+.overlay .nutrition .table .tab3,
+.overlay .nutrition .table .tab4 {
+  color: #5c5a5a;
+  font-family: "Outfit";
+}
+.overlay .nutrition .table .tab1 .txt,
+.overlay .nutrition .table .tab2 .txt,
+.overlay .nutrition .table .tab3 .txt,
+.overlay .nutrition .table .tab4 .txt {
+  padding-right: 120px;
+  color: var(--text-color);
+  font-family: "Outfit";
+  font-weight: 600;
+}
+.overlay .nutrition .table .tab1 hr {
+  width: 50%;
+  display: inline-block;
+  border-color: var(--text-color);
+}
